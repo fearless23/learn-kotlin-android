@@ -1,9 +1,6 @@
 package com.example.learnkotlin
 
 import android.content.Context
-import com.example.learnkotlin.adapter.ItemAdapter
-import com.example.learnkotlin.model.Affirmation
-import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.mockito.Mockito.mock
 
@@ -12,12 +9,6 @@ class AffirmationsAdaptersTest {
 
     @Test
     fun adapter_size() {
-        val data = listOf(
-            Affirmation(R.string.affirmation1, R.drawable.image1),
-            Affirmation(R.string.affirmation2, R.drawable.image2)
-        )
 
-        val adapter = ItemAdapter(context, data)
-        assertEquals("ItemAdapter is not the correct size", data.size, adapter.itemCount)
     }
 }
